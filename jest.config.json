@@ -1,0 +1,23 @@
+{
+  "collectCoverageFrom": [
+    "src/*.js",
+    "src/**/*.js"
+  ],
+  "coveragePathIgnorePatterns": [
+    "node_modules/"
+  ],
+  "moduleDirectories": [
+    "src",
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|sass)$": "identity-obj-proxy"
+  },
+  "transform": {
+    ".*": "node_modules/babel-jest"
+  },
+  "setupTestFrameworkScriptFile": "<tests/setup.js",
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ]
+}
