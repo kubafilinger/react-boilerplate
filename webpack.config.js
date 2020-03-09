@@ -15,5 +15,10 @@ module.exports = {
         publicPath: "/dist/",
         path: __dirname + "/dist/",
         filename: "app.min.js"
+    },
+    devServer: {
+        contentBase: __dirname,
+        // historyApiFallback: true,
+        writeToDisk: true
     }
 };
